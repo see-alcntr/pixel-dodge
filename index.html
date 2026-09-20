@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strike Ops</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="top-bar">
+        <div class="brand">STRIKE OPS</div>
+        <div class="status">
+          <span>Wave <strong id="waveText">1</strong></span>
+          <span>Score <strong id="scoreText">0</strong></span>
+          <span>HP <strong id="hpText">100</strong></span>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+      <div class="hud-panel">
+        <div class="weapon-box">
+          <span class="label">Weapon</span>
+          <strong id="weaponText">Ranger M4</strong>
+        </div>
+        <div class="ammo-box">
+          <span class="label">Ammo</span>
+          <strong id="ammoText">30 / 30</strong>
+        </div>
+        <div class="objective-box">
+          <span class="label">Objective</span>
+          <strong id="objectiveText">Clear the zone</strong>
+        </div>
+      </div>
+
+      <div id="overlay" class="overlay visible">
+        <div class="panel">
+          <h1>Strike Ops</h1>
+          <p>Hold the line in a hostile zone.</p>
+          <ul>
+            <li>Move: WASD</li>
+            <li>Aim: Mouse</li>
+            <li>Shoot: Left Click</li>
+            <li>Sprint: Shift</li>
+            <li>Reload: R</li>
+          </ul>
+          <button id="startButton">Deploy</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
